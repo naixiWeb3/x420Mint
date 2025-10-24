@@ -11,10 +11,10 @@ from loguru import logger
 from multiprocessing.dummy import Pool
 CONFIG = {
     "rpcUrl": "https://mainnet.base.org",
-    "privateKey": "你的私钥（0x 开头）",
+    "privateKey": "你的私钥 0x 开头",
     "x420TokenAddress": "0x5b30e6d93f5c50f92159394547b586b4e0047628",
-    "UsdcAmount": "1",
-    "threadCount": 5,
+    "UsdcAmount": "10",
+    "threadCount": 30,
     "totalMintCount": 100000,
     "proxy":None
 }
@@ -118,7 +118,7 @@ def mint(thread_id: int):
         logger.error(f"线程 {thread_id}: 铸造失败！结果: {result}")
 
 def send(payment_base64: str, max_retries: int = 3):
-    url = "https://pong.wtf/pong"
+    url = "https://pong.wtf/pong10"
     headers = {
         'accept': '*/*',
         'accept-language': 'zh-CN,zh;q=0.9',
@@ -126,7 +126,7 @@ def send(payment_base64: str, max_retries: int = 3):
         'cache-control': 'no-cache',
         'pragma': 'no-cache',
         'priority': 'u=1, i',
-        'referer': 'https://pong.wtf/pong',
+        'referer': 'https://pong.wtf/pong10',
         'sec-ch-ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"',
         'sec-ch-ua-mobile': '?0',
         'sec-ch-ua-platform': '"macOS"',
