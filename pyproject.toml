@@ -1,0 +1,10 @@
+[project]
+name = "x420mint"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "curl-cffi>=0.13.0",
+    "loguru>=0.7.3",
+    "web3>=7.14.0",
+]
