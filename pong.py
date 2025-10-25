@@ -168,7 +168,11 @@ if __name__ == "__main__":
     logger.warning("Author: 0xNaixi")
     logger.warning("https://x.com/0xNaiXi")
     logger.warning("验证码平台 https://www.nocaptcha.io/register?c=hLf08E")
-    with Pool(CONFIG["threadCount"]) as pool:
-        results = pool.map(mint, range(CONFIG["totalMintCount"]), chunksize=1)
+
+    logger.warning("请停止运行，项目已经超额，而且项目方一直不发币")
+    logger.warning("请停止运行，项目已经超额，而且项目方一直不发币")
+    logger.warning("请停止运行，项目已经超额，而且项目方一直不发币")
+    # with Pool(CONFIG["threadCount"]) as pool:
+    #     results = pool.map(mint, range(CONFIG["totalMintCount"]), chunksize=1)
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
